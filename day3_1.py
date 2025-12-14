@@ -37,4 +37,3 @@ for seq in content:
 
 print(sum(highest_joltage))
 
-

@@ -1,0 +1,37 @@
+# file= open("input_3.txt","r")
+file= open("tmp.txt","r") 
+
+unparsed_content= file.read()
+
+content= unparsed_content.split("\n")
+
+highest_joltage= []
+
+def findBiggest(str):
+    sequence1 = sorted([int(s) for s in list(str)])
+
+    print(sequence1)
+    str(sequence1)
+    # highest_index= seq.find(str(sequence1[-1]))
+
+    # highest_num= str(sequence1[-1])
+
+    # return highest_num,highest_index
+
+for seq in content:
+    biggest_index= 0
+    joltage= []
+
+    findBiggest(seq[biggest_index:-2])
+    # for i in range(12,0,-1):
+
+    #     big_num, big_i= findBiggest(seq[biggest_index:-i])
+    #     joltage.append(big_num)
+    #     biggest_index= big_i
+
+    #     print(big_num, big_i)
+
+
+print(sum(highest_joltage))
+
+
