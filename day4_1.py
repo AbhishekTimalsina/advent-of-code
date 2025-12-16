@@ -36,10 +36,9 @@ for y in range(0,len(content)):
 
 
             # print( curPosY,curPosX,"py:",py,"px:",px,content[curPosY][curPosX])
-            if (content[curPosY][curPosX]) =="@":
+            if (content[curPosY][curPosX]) =="@":               
                 count+=1
 
-    
 
         if count<4:
             valid_paper_rolls+= 1
